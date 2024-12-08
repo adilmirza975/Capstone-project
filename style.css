@@ -1,9 +1,14 @@
 * {
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+
 }
 
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
 
 
 nav {
@@ -58,10 +63,16 @@ nav a {
 .img-1 {
     width: 90vw;
     height: 90vh;
-    border: 1.5px;
+
     padding-top: 40px;
     object-fit: cover;
 
+}
+.img-1 img{
+    border: 1.5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -253,40 +264,147 @@ footer .f2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Responsive design */
+
+/* Responsive design for tablet and desktop */
+
+
+@media (min-width: 769px) and (max-width: 1549px) {
+
+    .heading{
+        padding: 4vw;
+        padding-bottom: 5vh;
+    }
+    .heading-1 {
+        font-size: 80px;
+        line-height: 80px;
+        padding-bottom: 4vh;
+        padding-top: 8vh;
+    }
+
+    .first{
+        padding: 4vh;
+    }
+
+    .heading .img-1{
+        padding: 10px;
+        height: 80vh;
+    }
+
+    .img-2{
+        height: 80vh;
+    }
+
+    .img-4{
+        height: 80vh;
+    }
+    
+    .para-1 {
+        font-size: 4vw;
+        line-height: 48px;
+        padding-bottom: 0;
+        width: 100%;
+        padding-top: 20vw;
+
+    }
+    
+    .para-2, .second {
+        font-size: 48px;
+    }
+    
+    .third {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 24px;
+    }
+    
+    .third h3 {
+        font-weight: 70;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 4vw;
+        line-height: 32px;
+        text-align: left;
+    }
+    
+    .fourth-1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    .fourth-2 {
+        font-size: 20px;
+    }
+    
+    .submit button {
+        height: 3vw;
+        width: 40vw;
+    }
+    
+    footer .f1 {
+        font-size: 20px;
+    }
+    
+    footer .f2 {
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+/* Responsive design for tablet screen*/
 @media (max-width: 768px) {
     nav a {
-       
-        font-size: 80%;
         font-family: Arial, Helvetica, sans-serif;
     }
+    
     .nav-div-1 a {
-        font-size: 4vw;
+        font-size: 5vw;
+        padding-left: 1vw;
+        
+    }
+
+    .nav-div-2 a{
+        font-size: 3.5vw;
+        padding: 1vw;
+    }
+
+    .heading{
+        padding: 3vw;
     }
     .heading-1{
         font-size: 8vw;
+        padding-top: 18vh;
     }
 
     .img-1{
         width: 100%;
         height: 60vh;
     }
+     
+    .first{
+        padding: 3vw;
+    }
     .para-1{
         width: 100%;
-        font-size: 3.5rem;
-        height: 70%;
+        font-size: 3rem;
+        height: 60%;
+        
+        
     }
+
+
 
     .img-2 {
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         border: 1.5px;
     }
 
     .img-4{
-        width: 80%;
+        width: 100%;
         height: 50vh;
         border: 1.5px;
+        
     }
     
 
@@ -294,17 +412,24 @@ footer .f2{
     .third {
         grid-template-columns: 1fr;
         padding: 0 24px;
-
-    }
-    
-    .third{
-        
         padding-left: auto; 
         width: 80%;
         margin-left: 7vw;
-
+    
     }
     
+    .third h3 {
+        font-weight: 50;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-left: auto;
+        line-height: 32px;
+        text-align: left;
+    }
+        
+        
+
     .fourth-1 {
         font-size: 2.5rem;
         line-height: 2.5rem;
@@ -333,17 +458,26 @@ footer .f2{
 
 
 
-
+/* responsive for phone screen */
 
     
-@media (max-width: 450px){
-    nav a {
-       
-        font-size: 80%;
-        font-family: Arial, Helvetica, sans-serif;
+@media(max-width: 523px){
+    .nav-div-1 a{
+       padding-right: 0.5vw;
+       padding-left: 0.5vw;
     }
-    .nav-div-1 a {
+    .nav-div-1{
+        padding-left: 1vw;
+    }
+
+    .nav-div-2{
+        padding-left: 1vw;
+        padding-right: 1.3vw;
+    }
+    .nav-div-2 a {
         font-size: 4vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
 
     }
 
@@ -352,7 +486,7 @@ footer .f2{
     }
 
     .heading{
-        padding: 1px;
+        padding: 2vw;
     }
     .heading-1{
         font-size: 7vw;
@@ -360,13 +494,18 @@ footer .f2{
     }
 
     .img-1{
+        
         width: 100%;
         height: 40vh;
-        padding-top: 2px;
-        padding: 10px;
+        padding-top: 0.6vw;
+        margin-right: 4vw;
         
     }
-
+    .img-1 img{
+        width: 96%;
+        height: 100%; 
+        
+    }
     .first{
         padding: 10px;
         line-height: 24px;
@@ -387,17 +526,48 @@ footer .f2{
 
     }
 
-    button{
-        width: 20vw;
+    .second{
+        padding-bottom: 20vw;
+    }
+    .third h3 {
+        font-weight: 70;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: auto;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .fourth-3 button{
+        width: 30vw;
         
         font-size: 2.5vw;
     }
+
+
 
     .img-4{
         width: 95%;
         height: 40vh;
         border: 1.5px;
     }
+
+
+
+    .form-1 .p1{
+        font-size: 5vw;
+    }
+    .form-1 .p2{
+        font-size: 2vw;
+    }
+
+    .b{
+        height: 10vw;
+        width: 10vw;
+    }
+    
     
 
     
@@ -416,8 +586,9 @@ footer .f2{
     }
     
     .fourth-1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 2.5rem;
+        padding: 5vw;
     }
     
     .fourth-2 {
@@ -426,7 +597,7 @@ footer .f2{
     
     .submit button {
         height: 4vw;
-        width: 50vw;
+        width: 90vw;
         font-size: 4.5vw;
     }
 
@@ -443,6 +614,9 @@ footer .f2{
         padding: 0.5vw 1vw;
     }
 }
+
+
+
 
 
 
