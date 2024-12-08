@@ -1,0 +1,451 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-div-2 {
+    display: flex;
+    gap: 12px;
+    line-height: 42px;
+    padding-right: 40px;
+
+}
+
+.nav-div-1 a {
+    font-size: 42px;
+    font-family: Source Serif 4;
+    font-weight: 600;
+    line-height: 42px;
+    padding-left: 30px;
+}
+
+.nav-div-2 a {
+    padding: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 400;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    padding: 100px;
+
+}
+
+.heading-1 {
+    text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.img-1 {
+    width: 90vw;
+    height: 90vh;
+    border: 1.5px;
+    padding-top: 40px;
+    object-fit: cover;
+
+}
+
+
+
+
+.first {
+    padding: 100px;
+}
+
+.para-1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    width: 900px;
+    height: 272px;
+    max-width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 9vw ;
+    padding-top: 4vw;
+}
+
+.img-2 {
+    width: 90vw;
+    height: 90vh;
+    border: 1.5px;
+}
+
+.para-2 {
+    padding: 3vw;
+}
+
+
+
+
+.second {
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px;
+}
+
+.third{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 48px;
+    gap: 52px;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+
+
+.third h3 {
+    font-weight: 70;
+    width: 646px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: auto;
+    line-height: 32px;
+    text-align: left;
+}
+
+.fourth{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.fourth-1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 68px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fourth-2{
+    font-size: 24px;
+    list-style: 32px;
+    padding-bottom: 40px;
+    color: rgba(33, 33, 33, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+button{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 12px;
+    color: white;
+}
+
+.fourth-semi{
+    padding: 40px;
+}
+
+.img-4{
+    width: 90vw;
+    height: 90vh;
+    border: 1.5px;
+}
+
+
+
+
+
+/* contact form */
+.form{
+    padding: 10vw;
+    
+}
+
+.form-1{
+    text-align: center;
+}
+
+.p1{
+    font-size: 1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.p2{
+    font-size: 1vw;
+    padding-top: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-top: 2vw;
+
+    
+    
+
+}
+
+.b{
+    height: 4vw;
+    width: 4vw;
+    background-color: rgba(33, 33, 33, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+     
+}
+
+.submit{
+    text-align: center;
+    padding: 2vw;
+}
+.submit button{
+    height: 2vw;
+    width: 29vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submit p{
+    font-size: 1vw;
+    padding-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 2vw 8vw; */
+    margin: 3vw;
+}
+
+footer .f1{
+    font-size: 28px;
+    color: rgba(33, 33, 33, 0.62);
+}
+footer .f2{
+    border: 1px solid rgba(92, 92, 92, 0.2);
+    padding: 0.8vw 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav a {
+       
+        font-size: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav-div-1 a {
+        font-size: 4vw;
+    }
+    .heading-1{
+        font-size: 8vw;
+    }
+
+    .img-1{
+        width: 100%;
+        height: 60vh;
+    }
+    .para-1{
+        width: 100%;
+        font-size: 3.5rem;
+        height: 70%;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: 50vh;
+        border: 1.5px;
+    }
+
+    .img-4{
+        width: 80%;
+        height: 50vh;
+        border: 1.5px;
+    }
+    
+
+    
+    .third {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+
+    }
+    
+    .third{
+        
+        padding-left: auto; 
+        width: 80%;
+        margin-left: 7vw;
+
+    }
+    
+    .fourth-1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .fourth-2 {
+        font-size: 1rem;
+    }
+    
+    .submit button {
+        height: 4vw;
+        width: 50vw;
+    }
+    
+    footer .f1 {
+        font-size: 1.2rem;
+    }
+    
+    footer .f2 {
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+
+
+
+
+
+
+    
+@media (max-width: 450px){
+    nav a {
+       
+        font-size: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav-div-1 a {
+        font-size: 4vw;
+
+    }
+
+    .nav-div-1 .nav1{
+        font-size: 5vw
+    }
+
+    .heading{
+        padding: 1px;
+    }
+    .heading-1{
+        font-size: 7vw;
+        padding: 2px;
+    }
+
+    .img-1{
+        width: 100%;
+        height: 40vh;
+        padding-top: 2px;
+        padding: 10px;
+        
+    }
+
+    .first{
+        padding: 10px;
+        line-height: 24px;
+        padding-top: 20vw;
+    }
+    .para-1{
+        width: 100%;
+        font-size: 5vw;
+        height: 70%;
+        line-height: 24px;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: 40vh;
+        border: 1.5px;
+        
+
+    }
+
+    button{
+        width: 20vw;
+        
+        font-size: 2.5vw;
+    }
+
+    .img-4{
+        width: 95%;
+        height: 40vh;
+        border: 1.5px;
+    }
+    
+
+    
+    .third {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+
+    }
+    
+    .third{
+        
+        padding-left: auto; 
+        width: 80%;
+        margin-left: 7vw;
+
+    }
+    
+    .fourth-1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .fourth-2 {
+        font-size: 1rem;
+    }
+    
+    .submit button {
+        height: 4vw;
+        width: 50vw;
+        font-size: 4.5vw;
+    }
+
+
+    .submit p{
+        font-size: 4vw;
+    }
+    
+    footer .f1 {
+        font-size: 1.2rem;
+    }
+    
+    footer .f2 {
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+
+
+
+
