@@ -1,0 +1,715 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    /* gradient color */
+    /* background-image: linear-gradient(rgb(238, 151, 238),rgba(244, 207, 23, 0.948), rgb(226, 227, 229), rgb(255, 119, 0));
+     */
+
+     /* corsor design */
+    cursor: none;
+}
+
+/* for cursor design  */
+.cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(60, 58, 60);
+    /* background: linear-gradient(45deg, #ff616d, #ffc171); */
+
+}
+
+.cursor-outline{
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgb(48, 46, 48);
+}
+.cursor-dot, .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+} 
+
+
+.img-1,.img-2,.img-4{
+    border-radius: 8vw;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-div-2 {
+    display: flex;
+    gap: 12px;
+    line-height: 42px;
+    padding-right: 40px;
+
+}
+
+.nav-div-1 a {
+    font-size: 42px;
+    font-family: Source Serif 4;
+    font-weight: 600;
+    line-height: 42px;
+    padding-left: 30px;
+    transition: font-size 0.5s ease-in;
+   
+}
+
+.nav-div-1 a:hover{
+    
+    font-size: 4vw;
+    /* text-decoration: underline; */
+    
+}
+
+.nav-div-2 a {
+    padding: 30px;
+    transition: font-size 0.8s ease-in-out; 
+
+}
+.nav-div-2 a:hover{
+    font-size: 2.5vw;
+    text-decoration: underline;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 400;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    padding: 120px;
+
+}
+
+.heading-1 {
+    text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: font-size 0.8s ease-in;
+
+}
+
+.heading-1:hover{
+    font-size: 11vw;
+    /* border: 10px solid black; */
+    border-radius: 40px;
+    color: black; 
+    
+
+}
+
+.img-1 {
+    width: 90vw;
+    height: 100%;
+   margin-top: 50px;
+    object-fit: cover; 
+    transition: box-shadow 0.7s ease-in-out;
+}
+.img-1:hover { 
+    box-shadow: 0 0 30px 20px rgba(129, 230, 62, 0.5); 
+}
+.img-1 img{
+    border: 1.5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.first {
+    padding: 100px;
+}
+
+.para-1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    width: 900px;
+    height: 272px;
+    max-width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 9vw ;
+    padding-top: 4vw;
+    transition: font-size 1s ease-in-out;
+}
+
+
+.img-2 {
+    width: 90vw;
+    height: 90vh;
+    border: 1.5px;
+    transition: box-shadow 0.7s ease-in-out;
+}
+
+.img-2:hover{
+    box-shadow: 0 0 30px 20px rgba(129, 230, 62, 0.5);
+}
+
+.para-2 {
+    padding: 3vw;
+}
+
+
+
+
+.second {
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px;
+}
+
+.third{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 48px;
+    gap: 52px;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+
+
+.third h3 {
+    font-weight: 70;
+    width: 646px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: auto;
+    line-height: 32px;
+    text-align: left;
+}
+
+.fourth{
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.fourth-1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 68px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fourth-2{
+    font-size: 24px;
+    list-style: 32px;
+    padding-bottom: 40px;
+    color: rgba(33, 33, 33, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.fourth button{margin-bottom: 1vw;}
+
+
+button{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 12px;
+    color: white;
+}
+
+.fourth-semi{
+    padding: 40px;
+}
+
+.img-4{
+    width: 90vw;
+    height: 90vh;
+    border: 1.5px;
+    transition: box-shadow 0.7s ease-in-out;
+}
+
+.img-4:hover{
+    box-shadow: 0 0 30px 20px rgba(129, 230, 62, 0.5);    
+    
+}
+
+/* contact form */
+.form{
+    padding: 10vw;
+    
+}
+
+.form-1{
+    text-align: center;
+}
+
+.p1{
+    font-size: 1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.p2{
+    font-size: 1vw;
+    padding-top: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-top: 2vw;
+
+    
+    
+
+}
+
+.b{
+    height: 4vw;
+    width: 4vw;
+    background-color: rgba(33, 33, 33, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+     
+}
+
+.submit{
+    text-align: center;
+    padding: 2vw;
+}
+.submit button{
+    height: 2vw;
+    width: 29vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submit p{
+    font-size: 1vw;
+    padding-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 2vw 8vw; */
+    margin: 3vw;
+}
+
+footer .f1{
+    font-size: 28px;
+    color: rgba(33, 33, 33, 0.62);
+    transition: font-size 0.7s;
+}
+
+footer .f1:hover{
+    font-size: 38px;
+}
+
+footer .f2{
+    border: 1px solid rgba(92, 92, 92, 0.2);
+    padding: 0.8vw 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border,font-size 0.7s;
+}
+footer .f2:hover{
+    font-size: 30px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for tablet and desktop */
+
+
+@media (min-width: 769px) and (max-width: 1549px) {
+
+    .heading{
+        padding: 4vw;
+        padding-bottom: 5vh;
+    }
+    .heading-1 {
+        font-size: 80px;
+        line-height: 80px;
+        padding-bottom: 4vh;
+        padding-top: 8vh;
+    }
+
+    
+    .first{
+        padding: 4vh;
+    }
+
+    .heading .img-1{
+        padding: 10px;
+        height: 80vh;
+    }
+
+    .img-2{
+        height: 80vh;
+    }
+
+    .img-4{
+        height: 80vh;
+    }
+    
+    .para-1 {
+        font-size: 4vw;
+        line-height: 48px;
+        padding-bottom: 0;
+        width: 100%;
+        padding-top: 20.1vw;
+
+    }
+    
+    .para-2, .second {
+        font-size: 48px;
+    }
+    
+    .third {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 24px;
+    }
+    
+    .third h3 {
+        font-weight: 70;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 4vw;
+        line-height: 32px;
+        text-align: left;
+    }
+    
+    .fourth-1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    .fourth-2 {
+        font-size: 20px;
+    }
+    
+    .submit button {
+        height: 3vw;
+        width: 40vw;
+    }
+    
+    footer .f1 {
+        font-size: 20px;
+    }
+    
+    footer .f2 {
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+/* Responsive design for tablet screen*/
+@media (max-width: 780px) {
+    nav a {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    .nav-div-1 a {
+        font-size: 5vw;
+        padding-left: 1vw;
+        
+        
+    }
+
+    .nav-div-2 a{
+        font-size: 3.5vw;
+        padding: 1vw;
+    }
+
+    .heading{
+        padding: 3vw;
+    }
+    .heading-1{
+        font-size: 8vw;
+        padding-top: 1vh;
+    }
+
+    .img-1{
+        width: 100%;
+        height: 60vh;
+    }
+     
+    .first{
+        padding: 3vw;
+    }
+    .para-1{
+        width: 100%;
+        font-size: 3rem;
+        height: 60%;
+        
+        
+    }
+
+
+
+    .img-2 {
+        width: 100%;
+        height: 40vh;
+        border: 1.5px;
+    }
+
+    .img-4{
+        width: 100%;
+        height: 50vh;
+        border: 1.5px;
+        
+    }
+    
+
+    
+    .third {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+        padding-left: auto; 
+        width: 80%;
+        margin-left: 7vw;
+    
+    }
+    
+    .third h3 {
+        font-weight: 50;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-left: auto;
+        line-height: 32px;
+        text-align: left;
+    }
+        
+        
+
+    .fourth-1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .fourth-2 {
+        font-size: 1rem;
+    }
+    
+    .submit button {
+        height: 4vw;
+        width: 50vw;
+    }
+    
+    footer .f1 {
+        font-size: 1.2rem;
+    }
+    
+    footer .f2 {
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+
+
+
+
+/* responsive for phone screen */
+
+    
+@media(max-width: 523px){
+    .nav-div-1 a{
+       padding-right: 0.5vw;
+       padding-left: 0.5vw;
+    }
+    .nav-div-1{
+        padding-left: 1vw;
+    }
+
+    .nav-div-2{
+        padding-left: 1vw;
+        padding-right: 1.3vw;
+    }
+    .nav-div-2 a {
+        font-size: 4vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+
+    }
+
+    .nav-div-1 .nav1{
+        font-size: 5vw
+    }
+
+    .heading{
+        padding: 2vw;
+    }
+    .heading-1{
+        font-size: 7vw;
+        padding: 2px;
+    }
+
+    .img-1{
+        
+        width: 100%;
+        height: 40vh;
+        padding-top: 0.6vw;
+        margin-right: 4vw;
+        
+    }
+    .img-1 img{
+        width: 96%;
+        height: 100%; 
+        
+    }
+    .first{
+        padding: 10px;
+        line-height: 24px;
+        padding-top: 20vw;
+    }
+    .para-1{
+        width: 100%;
+        font-size: 5vw;
+        height: 70%;
+        line-height: 24px;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: 40vh;
+        border: 1.5px;
+        
+
+    }
+
+    .second{
+        padding-bottom: 20vw;
+    }
+    .third h3 {
+        font-weight: 70;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: auto;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .fourth-3 button{
+        width: 30vw;
+        
+        font-size: 2.5vw;
+    }
+
+
+
+    .img-4{
+        width: 95%;
+        height: 40vh;
+        border: 1.5px;
+    }
+
+
+
+    .form-1 .p1{
+        font-size: 5vw;
+    }
+    .form-1 .p2{
+        font-size: 2vw;
+    }
+
+    .b{
+        height: 10vw;
+        width: 10vw;
+    }
+    
+    
+
+    
+    .third {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+
+    }
+    
+    .third{
+        
+        padding-left: auto; 
+        width: 80%;
+        margin-left: 7vw;
+
+    }
+    
+    .fourth-1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 5vw;
+    }
+    
+    .fourth-2 {
+        font-size: 1rem;
+    }
+    
+    .submit button {
+        height: 4vw;
+        width: 90vw;
+        font-size: 4.5vw;
+    }
+
+
+    .submit p{
+        font-size: 4vw;
+    }
+    
+    footer .f1 {
+        font-size: 1.2rem;
+    }
+    
+    footer .f2 {
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+
+
+
+
+
+
+
