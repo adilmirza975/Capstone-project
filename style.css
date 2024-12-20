@@ -69,12 +69,12 @@ nav {
     font-weight: 600;
     line-height: 42px;
     padding-left: 30px;
-    transition: font-size 0.5s ease-in;
+    transition: all 0.5s ease-in;
    
 }
 
 .nav-div-1 a:hover{
-    
+    text-shadow: 2px 3px 10px rgb(115, 255, 0);
     font-size: 4vw;
     /* text-decoration: underline; */
     
@@ -82,10 +82,11 @@ nav {
 
 .nav-div-2 a {
     padding: 30px;
-    transition: font-size 0.8s ease-in-out; 
+    transition: all 0.8s ease-in-out; 
 
 }
 .nav-div-2 a:hover{
+    text-shadow: 2px 2px 10px rgb(115, 255, 0);
     font-size: 2.5vw;
     text-decoration: underline;
     
@@ -109,13 +110,15 @@ nav a {
     font-size: 120px;
     line-height: 120px;
     font-weight: 600;
+    
     font-family: Arial, Helvetica, sans-serif;
-    transition: font-size 0.8s ease-in;
+    transition: all 0.8s ease-in;
 
 }
 
 .heading-1:hover{
     font-size: 11vw;
+    text-shadow: 5px 5px 30px rgb(115, 255, 0);
     /* border: 10px solid black; */
     border-radius: 40px;
     color: black; 
@@ -161,6 +164,11 @@ nav a {
     transition: font-size 1s ease-in-out;
 }
 
+.para-1:hover{
+    text-shadow: 5px 5px 10px rgb(101, 217, 83);
+}
+    
+
 
 .img-2 {
     width: 90vw;
@@ -175,6 +183,15 @@ nav a {
 
 .para-2 {
     padding: 3vw;
+    font-size: 8vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.para-2:hover{
+    color: rgb(178, 20, 213);
+    text-shadow: 5px 5px 15px black;
+    font-size: 9vw;
+
 }
 
 
@@ -187,6 +204,8 @@ nav a {
     font-family: Arial, Helvetica, sans-serif;
     border: 1.5px;
 }
+
+
 
 .third{
     display: grid;
@@ -204,13 +223,21 @@ nav a {
     font-weight: 70;
     width: 646px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: 400;
     margin-left: 100%;
     line-height: 32px;
     text-align: left;
+    transition: all 1s ease-in-out;
 }
 
+.third h3:hover{
+    font-size: 1.8vw;
+    font-weight: 60;
+    line-height: 42px;
+    text-align: center;
+}
+    
 .fourth{
     height: auto;
     width: 100%;
@@ -218,10 +245,19 @@ nav a {
 }
 
 .fourth-1{
-    font-size: 64px;
+    font-size: 4vw;
     font-weight: 600;
     line-height: 68px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease-in-out;
+    padding: 1vw;
+}
+
+.fourth-1:hover{
+    font-size: 5vw;
+    color: green;
+
+
 }
 
 
@@ -231,17 +267,56 @@ nav a {
     padding-bottom: 40px;
     color: rgba(33, 33, 33, 1);
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 1s ease-in-out;
     
+}
+
+.fourth-2:hover{
+    color: rgb(178, 20, 213);
+    text-shadow: 2px 3px 10px black;
 }
 
 .fourth button{margin-bottom: 1vw;}
 
+
+.p1{
+    transition: all 0.5s ease-in-out;
+}
+.p1:hover{
+    font-size: 4vw;
+    text-shadow: 2px 2px 10px rgb(76, 192, 76);
+
+}
+
+.p2{
+    transition: all 0.5s ease-in-out;
+}
+.p2:hover{
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 10px rgb(76, 192, 76);
+
+}
+
+
+.b{
+    transition: all 0.4s ease-in-out;
+}
+.b:hover{
+    color: white;
+    background-color: rgb(27, 150, 27);
+}
 
 button{
     font-size: 20px;
     background-color: rgba(0, 0, 0, 1);
     padding: 12px;
     color: white;
+    transition: all 0.5 ease-in-out;
+}
+button:hover{
+   background-color: rgb(14, 146, 56);
+   color: white;
+   border: none;
 }
 
 .fourth-semi{
@@ -256,9 +331,13 @@ button{
 }
 
 .img-4:hover{
-    box-shadow: 0 0 30px 20px rgba(129, 230, 62, 0.5);    
-    
+    box-shadow: 0 0 30px 20px rgba(129, 230, 62, 0.5); 
 }
+
+.f2{
+    transition: all 0.5s ease-in-out;
+} 
+   
 
 /* contact form */
 .form{
@@ -287,10 +366,6 @@ button{
     justify-content: center;
     gap: 1vw;
     padding-top: 2vw;
-
-    
-    
-
 }
 
 .b{
@@ -300,7 +375,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;  
-     
 }
 
 .submit{
@@ -341,26 +415,62 @@ footer .f1:hover{
     font-size: 38px;
 }
 
+
+
 footer .f2{
     border: 1px solid rgba(92, 92, 92, 0.2);
     padding: 0.8vw 2vw;
     font-family: Arial, Helvetica, sans-serif;
     transition: border,font-size 0.7s;
 }
+
 footer .f2:hover{
     font-size: 30px;
     border: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+.f2-1{
+    transition: all 0.5s ease-in-out;
+}
+.f2-1:hover{
+    background-color: lightgrey;
+}
+
+
 /* Responsive design for tablet and desktop */
 
 
 @media (min-width: 769px) and (max-width: 1549px) {
+    
+    .cursor-dot{
+        width: 10px;
+        height: 10px;
+        background-color: rgb(60, 58, 60);
+        /* background: linear-gradient(45deg, #ff616d, #ffc171); */
+    
+    }
+    
+    .cursor-outline{
+        width: 40px;
+        height: 40px;
+        border: 5px solid rgb(48, 46, 48);
+    }
+    .cursor-dot, .cursor-outline{
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+    } 
 
     .heading{
         padding: 4vw;
         padding-bottom: 5vh;
     }
+
+
     .heading-1 {
         font-size: 80px;
         line-height: 80px;
@@ -368,7 +478,7 @@ footer .f2:hover{
         padding-top: 8vh;
     }
 
-    
+
     .first{
         padding: 4vh;
     }
@@ -392,8 +502,12 @@ footer .f2:hover{
         padding-bottom: 0;
         width: 100%;
         padding-top: 20.1vw;
-
+        transition: all 1s ease-in-out;
     }
+    .para-1:hover{
+        text-shadow: 5px 5px 10px rgb(75, 255, 47);
+    }
+
     
     .para-2, .second {
         font-size: 48px;
