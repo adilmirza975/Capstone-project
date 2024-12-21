@@ -3,38 +3,7 @@
     padding: 0px;
 
 }
-body{
-    /* gradient color */
-    /* background-image: linear-gradient(rgb(238, 151, 238),rgba(244, 207, 23, 0.948), rgb(226, 227, 229), rgb(255, 119, 0));
-     */
 
-     /* corsor design */
-    cursor: none;
-}
-
-/* for cursor design  */
-.cursor-dot{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(60, 58, 60);
-    /* background: linear-gradient(45deg, #ff616d, #ffc171); */
-
-}
-
-.cursor-outline{
-    width: 40px;
-    height: 40px;
-    border: 5px solid rgb(48, 46, 48);
-}
-.cursor-dot, .cursor-outline{
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-} 
 
 
 .img-1,.img-2,.img-4{
